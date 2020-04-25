@@ -242,9 +242,8 @@ if (deBugModeOn === false) {											//uses these values in the game - mostly 
 		var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
 		Game_Interpreter.prototype.pluginCommand = function(command, args) 	{
 		    _Game_Interpreter_pluginCommand.call(this, command, args)		}
-		    if (command === initSkillLvl) {
-		    	initSkillLvl();
-		    }
+//		    if (command === initSkillLvl) {
+//		    	initSkillLvl();		    }
 
 
 /* Enter plugin commands here  as follows:
@@ -285,7 +284,7 @@ var varLoaded = false;
 var params = PluginManager.parameters('SF_SkillLvl_v0_5');
 
 // skill lvl progression from user integrted
-const initSkillLvl = () => {																		console.log("Initializing SkillLvl")
+// const initSkillLvl = () => {																		console.log("Initializing SkillLvl")
 	importedSkillProgressions = [];
 		importedSkillProgressions.push(String(params['skillProgression1']));
 		importedSkillProgressions.push(String(params['skillProgression2']));
@@ -333,7 +332,7 @@ const initSkillLvl = () => {																		console.log("Initializing SkillLvl
 		Expo = Impo;
 		} else {Console.log("Irregularities with imported array or variable")}
 
-	}
+//	}
 }
 /*
 var formula1 = []
